@@ -12,9 +12,35 @@ General place to maintain list of guidelines for unit testing.  I mostly program
 
 * Links to stuff
     * [Rusty Divine's checklists - my starting point](https://github.com/osmyn/Practices/blob/master/UnitTestGuidelines.md)
-    * 
+    *
 
-# Checklist
+# Current tools used
 
-* Test sho
+| Tool | Used For |
+|------|----------|
+| [xunit](https://github.com/xunit/xunit) | Testing Framework |
+| [Shoudly](https://github.com/shouldly/shouldly) | Asserts |
+| [AutoFixture](https://github.com/AutoFixture/AutoFixture) | Creating Fixtures
+| TBD | Mocking framework
+
+# Unit test code review checklist
+
+TBD:  Change these guidelines into a checklist
+
+* Test names should follow the pattern: UnitOfWork_Condition_Result
+* Test should came common section
+    * TBD:  Decide on Arrange, Act, Assert or Given, When, Then
+* Fake all dependencies
+* Stay within one project layer (i.e API)
+* Determine if the test is testing state, value, or interaction
+* Avoid more than one Mock
+* Only assert against one object
+* Favor the public API
+    * TBD:  What is the "public" API when the application is doing mainly automated data processing
+* Favor builder over setup methods
+    * TBD: How does this fit with Fixtures/AutoFixture
+* Test Behavior not Methods
+
+
+     
 
