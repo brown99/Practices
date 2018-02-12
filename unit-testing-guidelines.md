@@ -27,7 +27,9 @@ General place to maintain list of guidelines for unit testing.  I mostly program
 
 TBD:  Change these guidelines into a checklist
 
-* Test names should follow the pattern: UnitOfWork_Condition_Result
+* Test names should follow the pattern: 
+   * UnitOfWork_Condition_Result
+   * [UnitOfWork_StateUnderTest_ExpectedBehavior]
 * Test should came common section
     * TBD:  Decide on Arrange, Act, Assert or Given, When, Then
 * Fake all dependencies
@@ -42,5 +44,4 @@ TBD:  Change these guidelines into a checklist
 * Test Behavior not Methods
 
 
-     
 
